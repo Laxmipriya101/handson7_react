@@ -35,7 +35,7 @@ export default function Student() {
                   <td>{item.Course}</td>
                   <td>{item.Batch}</td>
                   <td>
-                    <Link to={"/EditStudent"} state={item.id}>
+                    <Link to={"/EditStudent"} state={{ data:index}}>
                       edit
                     </Link>
                   </td>
